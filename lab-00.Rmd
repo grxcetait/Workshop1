@@ -33,7 +33,7 @@ team_data
 
 ### Exercise 18
 
-We now work on visualising our data. 
+We now work on visualising our data.
 
 ```{r bar-plot}
 p1 <- ggplot(data = team_data, 
@@ -46,20 +46,19 @@ p1 <- ggplot(data = team_data,
 p1
 ```
 
-
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+It shows a bar chart for which number and colour each team member likes.
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "Team Member's Username", 
+          y = "Team Member's Favourite Number",
+          title = "Team Member's Data")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+I think that it changes the titles of the axis.
 
 ### Exercise 20
 
@@ -69,4 +68,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+It would not be good at conveying information because the majority of people would have unique hobbies so there would be 100+ bars. A better way of displaying data would be to group hobbies together. 
